@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(221, 172, 112);
+            align-content: center;
+        }
+    </style>
+    <title>Motivate Yourself NOW!!!</title>
+</head>
+<body>
+    <h1>You should motivate yourself now!!!</h1>
+
+    <input type="button" onClick="displayImage()" value="motivate yourself now!!!">
+    <br />
+    <br />
+    <br />
+    <img src="Placeholder.png" name="canvas" style=""/>
+    
+    <script>
+        var imgArr = [
+            "BadThings.gif", 
+            "GoYou.gif", 
+            "NeverGiveUp.gif", 
+            "proud-of-u.gif", 
+            "UndyingLove.gif", 
+            "YouCanDoIt.gif"
+        ];
+
+            function displayImage(){
+
+                //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
+                var num = Math.floor(Math.random() * 5); // 0...6
+                //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
+                document.canvas.src = imgArr[num];
+
+            }
+    </script>
+</body>
+</html>
